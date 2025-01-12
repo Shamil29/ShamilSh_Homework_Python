@@ -1,7 +1,6 @@
 import allure
 from selenium.webdriver.common.by import By
 
-
 class YourInfoPage:
 
     def __init__(self, browser):

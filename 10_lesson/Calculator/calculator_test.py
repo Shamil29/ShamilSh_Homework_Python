@@ -5,9 +5,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from CalculatorPage import CalculatorPage
 
 
+@allure.title("Тест на отображение результата в окне")
 @allure.feature("Калькулятор")
 @allure.suite("Тест калькулятора")
-@allure.title("Тест на отображение результата в окне")
 @allure.severity("blocker")
 def test_data_types():
     browser = webdriver.Chrome(

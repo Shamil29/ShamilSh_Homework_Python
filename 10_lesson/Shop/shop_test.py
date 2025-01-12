@@ -17,9 +17,9 @@ last_name = 'Shamsudinov'
 zip_postal_code = '171381'
 
 
+@allure.title("Тест на отображение стоимости добавленных товаров в корзину")
 @allure.feature("Магазин 'Swag Labs'")
 @allure.suite("Тест магазина 'Swag Labs'")
-@allure.title("Тест на отображение стоимости добавленных товаров в корзину")
 @allure.severity("blocker")
 def test_swag_labs():
     browser = webdriver.Chrome(
