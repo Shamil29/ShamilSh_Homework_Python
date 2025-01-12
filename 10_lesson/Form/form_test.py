@@ -34,8 +34,10 @@ alert_danger_color = "rgba(248, 215, 218, 1)"
 alert_success_color = "rgba(209, 231, 221, 1)"
 
 
-@allure.epic("Форма")
+@allure.feature("Форма")
+@allure.suite("Тест формы")
 @allure.title("Тест на заполнение полей 'Типы данных'")
+@allure.severity("blocker")
 def test_data_types():
 
     browser = webdriver.Chrome(

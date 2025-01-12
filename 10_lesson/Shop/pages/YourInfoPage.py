@@ -9,21 +9,21 @@ class YourInfoPage:
         self.browser.get("https://www.saucedemo.com/checkout-step-one.html")
         self.browser.maximize_window()
 
-    @allure.step("Заполнение поля 'First Name'")
+    @allure.step("Заполнение поля 'First Name' {first_name}")
     def first_name(self, first_name):
         first_name_field = self.browser.find_element(By.ID, 'first-name')
         first_name_field.clear()
         my_first_name = first_name
         first_name_field.send_keys(my_first_name)
 
-    @allure.step("Заполнение поля 'Last Name'")
+    @allure.step("Заполнение поля 'Last Name' {last_name}")
     def last_name(self, last_name):
         last_name_field = self.browser.find_element(By.ID, 'last-name')
         last_name_field.clear()
         my_last_name = last_name
         last_name_field.send_keys(my_last_name)
 
-    @allure.step("Заполнение поля 'Zip/Postal Code'")
+    @allure.step("Заполнение поля 'Zip/Postal Code' {zip_postal_code}")
     def zip_postal_code(self, zip_postal_code):
         zip_postal_code_field = self.browser.find_element(By.ID, 'postal-code')
         zip_postal_code_field.clear()

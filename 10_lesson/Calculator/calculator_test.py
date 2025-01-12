@@ -5,8 +5,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from CalculatorPage import CalculatorPage
 
 
-@allure.epic("Калькулятор")
+@allure.feature("Калькулятор")
+@allure.suite("Тест калькулятора")
 @allure.title("Тест на отображение результата в окне")
+@allure.severity("blocker")
 def test_data_types():
     browser = webdriver.Chrome(
         service=Service(ChromeDriverManager().install()))
